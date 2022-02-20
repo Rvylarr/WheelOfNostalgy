@@ -1,0 +1,66 @@
+Button {
+   -fx-display: inline-block;
+   -fx-font-size: 24px;
+   -fx-font-weight: bold;
+   -fx-text-decoration: none;
+   -fx-border-radius: 15px;
+   -fx-background-radius: 20;
+   -fx-background-color:
+           linear-gradient(#ffd65b, #e68400),
+           linear-gradient(#fbd190, #ffb71c),
+           linear-gradient(#ffe89b, #ffa909),
+           linear-gradient(#fed995 0%, #ffc23d 50%, #ff7800 100%),
+           linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+       -fx-background-insets: 0,1,2,3,0;
+       -fx-text-fill: #654b00;
+       -fx-alignment: top-center;
+       -fx-padding: 20 30 20 30;
+ }
+
+ Button:hover {
+    -fx-background-color:
+         linear-gradient(#fee390, #e1a047),
+         linear-gradient(#ffeed4, #fccd67),
+         linear-gradient(#fcf4db, #ffc75f),
+         linear-gradient(#fceed3 0%, #ffdc90 50%, #fb9f4d 100%),
+         linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+ }
+
+ Button:pressed {
+    -fx-padding: 20 30 19 28;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+ }
+
+Button:disabled {
+    -fx-opacity: 75%;
+}
+
+Rectangle {
+         -fx-opacity: 65%;
+}
+
+ Label {
+    -fx-font-family: "Nautilus Pompilius";
+    -fx-font-size: 24px;
+ }
+
+ #info_text {
+    -fx-font-family: "Tagir DP Normal";
+    -fx-text-fill: rgba(255,255,255,0.9);
+    -fx-font-size: 25px;
+    -fx-line-spacing: 0.4em;
+ }
+
+ #info_header {
+    -fx-font-family: "Tagir DP Normal";
+    -fx-font-size: 40px;
+    -fx-text-fill: rgba(255,255,255,0.9);
+ }
+
+ #info_version, #info_creator {
+    -fx-font-family: "Comfortaa";
+    -fx-font-size: 20px;
+    -fx-text-fill: rgba(220, 20, 60 ,0.9);
+    -fx-opacity: 0%;
+ }
+
